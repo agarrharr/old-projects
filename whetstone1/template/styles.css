@@ -1,0 +1,76 @@
+/*base styles*/
+html, body {	
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+div{
+	word-wrap:normal;
+	white-space:normal;
+	overflow: auto;
+	height: auto;
+}
+p{
+	word-wrap:normal;
+	white-space:normal;
+}
+
+/*layout styles*/
+.layout {
+	height: 100%;
+}
+.center, .east, .west, .north, .south {
+	background-color: white;
+	border: 1px solid rgb(200,200,200);
+	display: inline-block;
+}
+.west {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.center {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.east {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.west {
+	width: 175;
+}
+
+.east {
+	width: 50%;
+}
+.north, .south {
+	height: 30;
+}
+
+/*layout styles
+.selectable {
+	width: 100%;
+}*/
+
+/*other styles*/
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.cursive{
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 20;
+}
+p.small{
+	font-size: 15;
+}
+.error{
+	font-family: 'Nothing You Could Do', cursive;
+	color: red;
+}
+div.underline{
+	border-bottom:thin solid #c0c0c0;
+}

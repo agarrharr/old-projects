@@ -1,0 +1,335 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 -- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `food`\
+--\
+\
+CREATE TABLE `food` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `type_id` int(11) NOT NULL,\
+  `name` varchar(50) NOT NULL,\
+  `day` int(11) NOT NULL,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=242 ;\
+\
+--\
+-- Dumping data for table `food`\
+--\
+\
+INSERT INTO `food` VALUES(1, 1, 'Bean (Lima)', 1);\
+INSERT INTO `food` VALUES(2, 1, 'Duck', 1);\
+INSERT INTO `food` VALUES(3, 1, 'Fava beans', 1);\
+INSERT INTO `food` VALUES(4, 1, 'Orange roughy', 1);\
+INSERT INTO `food` VALUES(5, 1, 'Tofu', 1);\
+INSERT INTO `food` VALUES(6, 1, 'Bean (Pinto)', 1);\
+INSERT INTO `food` VALUES(7, 1, 'Egg (Duck)', 1);\
+INSERT INTO `food` VALUES(8, 1, 'Garbanzos (Chickpeas)', 1);\
+INSERT INTO `food` VALUES(9, 1, 'Salmon', 1);\
+INSERT INTO `food` VALUES(10, 1, 'Tofu yogurt', 1);\
+INSERT INTO `food` VALUES(11, 1, 'Beans (Kidney)', 1);\
+INSERT INTO `food` VALUES(12, 1, 'Egg white', 1);\
+INSERT INTO `food` VALUES(13, 1, 'Lentil', 1);\
+INSERT INTO `food` VALUES(14, 1, 'Soybean', 1);\
+INSERT INTO `food` VALUES(15, 1, 'Trout', 1);\
+INSERT INTO `food` VALUES(16, 1, 'Chicken', 1);\
+INSERT INTO `food` VALUES(17, 1, 'Egg yolk', 1);\
+INSERT INTO `food` VALUES(18, 1, 'Mung beans', 1);\
+INSERT INTO `food` VALUES(19, 1, 'Sprout (Mung bean)', 1);\
+INSERT INTO `food` VALUES(20, 2, 'Garbanzo Flour', 1);\
+INSERT INTO `food` VALUES(21, 2, 'Quinoa', 1);\
+INSERT INTO `food` VALUES(22, 2, 'Soy flour', 1);\
+INSERT INTO `food` VALUES(23, 2, 'Soybean Flour', 1);\
+INSERT INTO `food` VALUES(24, 3, 'Alfalfa sprouts', 1);\
+INSERT INTO `food` VALUES(25, 3, 'Artichoke', 1);\
+INSERT INTO `food` VALUES(26, 3, 'Carrot', 1);\
+INSERT INTO `food` VALUES(27, 3, 'Celery', 1);\
+INSERT INTO `food` VALUES(28, 3, 'Chard', 1);\
+INSERT INTO `food` VALUES(29, 3, 'Chicory', 1);\
+INSERT INTO `food` VALUES(30, 3, 'Escarole', 1);\
+INSERT INTO `food` VALUES(31, 3, 'Fennel', 1);\
+INSERT INTO `food` VALUES(32, 3, 'Lambs quarters', 1);\
+INSERT INTO `food` VALUES(33, 3, 'Lettuce', 1);\
+INSERT INTO `food` VALUES(34, 3, 'Parsnip', 1);\
+INSERT INTO `food` VALUES(35, 3, 'Pea (Green)', 1);\
+INSERT INTO `food` VALUES(36, 3, 'Spinach', 1);\
+INSERT INTO `food` VALUES(37, 3, 'Swiss Chard', 1);\
+INSERT INTO `food` VALUES(38, 4, 'Banana', 1);\
+INSERT INTO `food` VALUES(39, 4, 'Grape', 1);\
+INSERT INTO `food` VALUES(40, 4, 'Grapefruit', 1);\
+INSERT INTO `food` VALUES(41, 4, 'Kumquat', 1);\
+INSERT INTO `food` VALUES(42, 4, 'Lemon', 1);\
+INSERT INTO `food` VALUES(43, 4, 'Lime', 1);\
+INSERT INTO `food` VALUES(44, 4, 'Orange', 1);\
+INSERT INTO `food` VALUES(45, 4, 'Papaya', 1);\
+INSERT INTO `food` VALUES(46, 4, 'Raisin', 1);\
+INSERT INTO `food` VALUES(47, 5, 'Filbert', 1);\
+INSERT INTO `food` VALUES(48, 5, 'Flaxseed', 1);\
+INSERT INTO `food` VALUES(49, 5, 'Hazelnut', 1);\
+INSERT INTO `food` VALUES(50, 5, 'Peanuts', 1);\
+INSERT INTO `food` VALUES(51, 5, 'Sesame', 1);\
+INSERT INTO `food` VALUES(52, 5, 'Soy Nuts', 1);\
+INSERT INTO `food` VALUES(53, 6, 'Anise', 1);\
+INSERT INTO `food` VALUES(54, 6, 'Caraway', 1);\
+INSERT INTO `food` VALUES(55, 6, 'Caraway seed', 1);\
+INSERT INTO `food` VALUES(56, 6, 'Celery seed', 1);\
+INSERT INTO `food` VALUES(57, 6, 'Coriander', 1);\
+INSERT INTO `food` VALUES(58, 6, 'Cream of tartar', 1);\
+INSERT INTO `food` VALUES(59, 6, 'Cumin', 1);\
+INSERT INTO `food` VALUES(60, 6, 'Dill', 1);\
+INSERT INTO `food` VALUES(61, 6, 'Fenugreek', 1);\
+INSERT INTO `food` VALUES(62, 6, 'Lovage', 1);\
+INSERT INTO `food` VALUES(63, 6, 'Oil of Wintergreen', 1);\
+INSERT INTO `food` VALUES(64, 6, 'Parsley', 1);\
+INSERT INTO `food` VALUES(65, 6, 'Tarragon', 1);\
+INSERT INTO `food` VALUES(66, 7, 'Flaxseed Oil', 1);\
+INSERT INTO `food` VALUES(67, 7, 'Sesame Oil', 1);\
+INSERT INTO `food` VALUES(68, 7, 'Soy Oil', 1);\
+INSERT INTO `food` VALUES(69, 7, 'Sunflower Oil', 1);\
+INSERT INTO `food` VALUES(70, 8, 'Grape Juice', 1);\
+INSERT INTO `food` VALUES(71, 8, 'Grapefruit Juice', 1);\
+INSERT INTO `food` VALUES(72, 8, 'Green tea', 1);\
+INSERT INTO `food` VALUES(73, 8, 'Orange juice', 1);\
+INSERT INTO `food` VALUES(74, 8, 'Soy milk', 1);\
+INSERT INTO `food` VALUES(75, 9, 'Alfalfa', 1);\
+INSERT INTO `food` VALUES(76, 9, 'Carob', 1);\
+INSERT INTO `food` VALUES(77, 9, 'Lemon juice', 1);\
+INSERT INTO `food` VALUES(78, 9, 'Safflower', 1);\
+INSERT INTO `food` VALUES(79, 9, 'Stevia', 1);\
+INSERT INTO `food` VALUES(80, 9, 'Sunflower', 1);\
+INSERT INTO `food` VALUES(81, 1, 'Cashew butter', 2);\
+INSERT INTO `food` VALUES(82, 1, 'Codfish', 2);\
+INSERT INTO `food` VALUES(83, 1, 'Crayfish', 2);\
+INSERT INTO `food` VALUES(84, 1, 'Haddock', 2);\
+INSERT INTO `food` VALUES(85, 1, 'Lobster', 2);\
+INSERT INTO `food` VALUES(86, 1, 'Pork', 2);\
+INSERT INTO `food` VALUES(87, 1, 'Shrimp', 2);\
+INSERT INTO `food` VALUES(88, 2, 'Buckwheat', 2);\
+INSERT INTO `food` VALUES(89, 2, 'Hemp', 2);\
+INSERT INTO `food` VALUES(90, 2, 'Tapioca', 2);\
+INSERT INTO `food` VALUES(91, 3, 'Asparagus', 2);\
+INSERT INTO `food` VALUES(92, 3, 'Cassava', 2);\
+INSERT INTO `food` VALUES(93, 3, 'Cucumber', 2);\
+INSERT INTO `food` VALUES(94, 3, 'Pumpkin', 2);\
+INSERT INTO `food` VALUES(95, 3, 'Rhubarb', 2);\
+INSERT INTO `food` VALUES(96, 3, 'Seaweed', 2);\
+INSERT INTO `food` VALUES(97, 3, 'Squash', 2);\
+INSERT INTO `food` VALUES(98, 3, 'Zucchini', 2);\
+INSERT INTO `food` VALUES(99, 4, 'Avacado', 2);\
+INSERT INTO `food` VALUES(100, 4, 'Coconut', 2);\
+INSERT INTO `food` VALUES(101, 4, 'Date', 2);\
+INSERT INTO `food` VALUES(102, 4, 'Mango', 2);\
+INSERT INTO `food` VALUES(103, 4, 'Persimmon', 2);\
+INSERT INTO `food` VALUES(104, 4, 'Pineapple', 2);\
+INSERT INTO `food` VALUES(105, 4, 'Pomegranate', 2);\
+INSERT INTO `food` VALUES(106, 4, 'Watermelon', 2);\
+INSERT INTO `food` VALUES(107, 5, 'Cashew', 2);\
+INSERT INTO `food` VALUES(108, 5, 'Pine nut', 2);\
+INSERT INTO `food` VALUES(109, 5, 'Pistachio', 2);\
+INSERT INTO `food` VALUES(110, 5, 'Poppy seed', 2);\
+INSERT INTO `food` VALUES(111, 5, 'Pumpkin seed and meal', 2);\
+INSERT INTO `food` VALUES(112, 6, 'Bay leaf', 2);\
+INSERT INTO `food` VALUES(113, 6, 'Cardamom', 2);\
+INSERT INTO `food` VALUES(114, 6, 'Cinnamon', 2);\
+INSERT INTO `food` VALUES(115, 6, 'Ginger', 2);\
+INSERT INTO `food` VALUES(116, 6, 'Saffron', 2);\
+INSERT INTO `food` VALUES(117, 7, 'Canola Oil', 2);\
+INSERT INTO `food` VALUES(118, 7, 'Olive Oil', 2);\
+INSERT INTO `food` VALUES(119, 8, 'Cashew Nut Milk', 2);\
+INSERT INTO `food` VALUES(120, 8, 'Cinnamon tea', 2);\
+INSERT INTO `food` VALUES(121, 8, 'Coconut milk', 2);\
+INSERT INTO `food` VALUES(122, 8, 'Hemp milk', 2);\
+INSERT INTO `food` VALUES(123, 8, 'Pineapple Juice', 2);\
+INSERT INTO `food` VALUES(124, 9, 'Agar', 2);\
+INSERT INTO `food` VALUES(125, 9, 'Carageen', 2);\
+INSERT INTO `food` VALUES(126, 1, 'Abalone', 3);\
+INSERT INTO `food` VALUES(127, 1, 'Clam', 3);\
+INSERT INTO `food` VALUES(128, 1, 'Cuttlefish', 3);\
+INSERT INTO `food` VALUES(129, 1, 'Flounder', 3);\
+INSERT INTO `food` VALUES(130, 1, 'Grouper', 3);\
+INSERT INTO `food` VALUES(131, 1, 'Halibut', 3);\
+INSERT INTO `food` VALUES(132, 1, 'Mussel', 3);\
+INSERT INTO `food` VALUES(133, 1, 'Scallop', 3);\
+INSERT INTO `food` VALUES(134, 1, 'Sole', 3);\
+INSERT INTO `food` VALUES(135, 1, 'Turkey', 3);\
+INSERT INTO `food` VALUES(136, 1, 'Venison', 3);\
+INSERT INTO `food` VALUES(137, 2, 'Corn flour', 3);\
+INSERT INTO `food` VALUES(138, 2, 'Corn meal', 3);\
+INSERT INTO `food` VALUES(139, 2, 'Grits', 3);\
+INSERT INTO `food` VALUES(140, 2, 'Millet', 3);\
+INSERT INTO `food` VALUES(141, 2, 'Oats', 3);\
+INSERT INTO `food` VALUES(142, 2, 'Oats (Gluten free)', 3);\
+INSERT INTO `food` VALUES(143, 2, 'Popcorn (Plain)', 3);\
+INSERT INTO `food` VALUES(144, 2, 'Rice (Brown)', 3);\
+INSERT INTO `food` VALUES(145, 2, 'Rice (White)', 3);\
+INSERT INTO `food` VALUES(146, 2, 'Teff', 3);\
+INSERT INTO `food` VALUES(147, 3, 'Bamboo shoots', 3);\
+INSERT INTO `food` VALUES(148, 3, 'Capsicum', 3);\
+INSERT INTO `food` VALUES(149, 3, 'Corn', 3);\
+INSERT INTO `food` VALUES(150, 3, 'Eggplant', 3);\
+INSERT INTO `food` VALUES(151, 3, 'Pepper (Green)', 3);\
+INSERT INTO `food` VALUES(152, 3, 'Pepper (Purple)', 3);\
+INSERT INTO `food` VALUES(153, 3, 'Pepper (Red)', 3);\
+INSERT INTO `food` VALUES(154, 3, 'Pepper (White)', 3);\
+INSERT INTO `food` VALUES(155, 3, 'Tomato', 3);\
+INSERT INTO `food` VALUES(156, 4, 'Blueberry', 3);\
+INSERT INTO `food` VALUES(157, 4, 'Kiwi', 3);\
+INSERT INTO `food` VALUES(158, 4, 'Pear', 3);\
+INSERT INTO `food` VALUES(159, 5, 'Pecan', 3);\
+INSERT INTO `food` VALUES(160, 5, 'Walnut (Black)', 3);\
+INSERT INTO `food` VALUES(161, 6, 'Ginseng', 3);\
+INSERT INTO `food` VALUES(162, 6, 'Nutmeg', 3);\
+INSERT INTO `food` VALUES(163, 6, 'Paprika', 3);\
+INSERT INTO `food` VALUES(164, 6, 'Pepper (Cayenne)', 3);\
+INSERT INTO `food` VALUES(165, 6, 'Pepper (Chili)', 3);\
+INSERT INTO `food` VALUES(166, 7, 'Corn oil', 3);\
+INSERT INTO `food` VALUES(167, 7, 'Rice Bran Oil', 3);\
+INSERT INTO `food` VALUES(168, 7, 'Walnut Oil', 3);\
+INSERT INTO `food` VALUES(169, 8, 'Pear nectar', 3);\
+INSERT INTO `food` VALUES(170, 8, 'Rice milk', 3);\
+INSERT INTO `food` VALUES(171, 8, 'Tomato Juice', 3);\
+INSERT INTO `food` VALUES(172, 9, 'Agave', 3);\
+INSERT INTO `food` VALUES(173, 9, 'Corn syrup', 3);\
+INSERT INTO `food` VALUES(174, 9, 'Maltose', 3);\
+INSERT INTO `food` VALUES(175, 9, 'Maple sugar', 3);\
+INSERT INTO `food` VALUES(176, 9, 'Maple syrup', 3);\
+INSERT INTO `food` VALUES(177, 9, 'Rice Syrup', 3);\
+INSERT INTO `food` VALUES(178, 1, 'Beef', 4);\
+INSERT INTO `food` VALUES(179, 1, 'Lamb', 4);\
+INSERT INTO `food` VALUES(180, 1, 'Mackerel', 4);\
+INSERT INTO `food` VALUES(181, 1, 'Ostrich', 4);\
+INSERT INTO `food` VALUES(182, 1, 'Ostrich Egg', 4);\
+INSERT INTO `food` VALUES(183, 1, 'Swordfish', 4);\
+INSERT INTO `food` VALUES(184, 1, 'Tilapia', 4);\
+INSERT INTO `food` VALUES(185, 1, 'Tuna', 4);\
+INSERT INTO `food` VALUES(186, 1, 'Yogurt', 4);\
+INSERT INTO `food` VALUES(187, 2, 'Cottonseed meal', 4);\
+INSERT INTO `food` VALUES(188, 3, 'Arugula', 4);\
+INSERT INTO `food` VALUES(189, 3, 'Bokchoy', 4);\
+INSERT INTO `food` VALUES(190, 3, 'Broccoli', 4);\
+INSERT INTO `food` VALUES(191, 3, 'Cabbage', 4);\
+INSERT INTO `food` VALUES(192, 3, 'Cauliflower', 4);\
+INSERT INTO `food` VALUES(193, 3, 'Collard greens', 4);\
+INSERT INTO `food` VALUES(194, 3, 'Collards', 4);\
+INSERT INTO `food` VALUES(195, 3, 'Kale', 4);\
+INSERT INTO `food` VALUES(196, 3, 'Kohlrabi', 4);\
+INSERT INTO `food` VALUES(197, 3, 'Okra', 4);\
+INSERT INTO `food` VALUES(198, 3, 'Potato (Sweet)', 4);\
+INSERT INTO `food` VALUES(199, 3, 'Turnip', 4);\
+INSERT INTO `food` VALUES(200, 4, 'Apricot', 4);\
+INSERT INTO `food` VALUES(201, 4, 'Cherry', 4);\
+INSERT INTO `food` VALUES(202, 4, 'Fig', 4);\
+INSERT INTO `food` VALUES(203, 4, 'Guava', 4);\
+INSERT INTO `food` VALUES(204, 4, 'Loganberry', 4);\
+INSERT INTO `food` VALUES(205, 4, 'Nectarine', 4);\
+INSERT INTO `food` VALUES(206, 4, 'Peach', 4);\
+INSERT INTO `food` VALUES(207, 4, 'Plum', 4);\
+INSERT INTO `food` VALUES(208, 4, 'Raspberry (Black)', 4);\
+INSERT INTO `food` VALUES(209, 4, 'Raspberry (Red)', 4);\
+INSERT INTO `food` VALUES(210, 4, 'Strawberry', 4);\
+INSERT INTO `food` VALUES(211, 5, 'Brazil nut', 4);\
+INSERT INTO `food` VALUES(212, 5, 'Chestnut', 4);\
+INSERT INTO `food` VALUES(213, 5, 'Cola', 4);\
+INSERT INTO `food` VALUES(214, 5, 'Macadamia', 4);\
+INSERT INTO `food` VALUES(215, 5, 'Salba seed (Chia seed)', 4);\
+INSERT INTO `food` VALUES(216, 5, 'Water chestnut', 4);\
+INSERT INTO `food` VALUES(217, 6, 'Basil', 4);\
+INSERT INTO `food` VALUES(218, 6, 'Caper', 4);\
+INSERT INTO `food` VALUES(219, 6, 'Horehound', 4);\
+INSERT INTO `food` VALUES(220, 6, 'Lavender', 4);\
+INSERT INTO `food` VALUES(221, 6, 'Marjoram', 4);\
+INSERT INTO `food` VALUES(222, 6, 'Oregano', 4);\
+INSERT INTO `food` VALUES(223, 6, 'Pepper (Black)', 4);\
+INSERT INTO `food` VALUES(224, 6, 'Pepper (White)', 4);\
+INSERT INTO `food` VALUES(225, 6, 'Peppermint', 4);\
+INSERT INTO `food` VALUES(226, 6, 'Rosemary', 4);\
+INSERT INTO `food` VALUES(227, 6, 'Sage', 4);\
+INSERT INTO `food` VALUES(228, 6, 'Savory', 4);\
+INSERT INTO `food` VALUES(229, 6, 'Spearmint', 4);\
+INSERT INTO `food` VALUES(230, 6, 'Thyme', 4);\
+INSERT INTO `food` VALUES(231, 7, 'Butter', 4);\
+INSERT INTO `food` VALUES(232, 7, 'Cocoa butter', 4);\
+INSERT INTO `food` VALUES(233, 7, 'Cottonseed', 4);\
+INSERT INTO `food` VALUES(234, 7, 'Ghee (Clarified butter)', 4);\
+INSERT INTO `food` VALUES(235, 8, 'Milk (Cow)', 4);\
+INSERT INTO `food` VALUES(236, 8, 'Milk (Goat)', 4);\
+INSERT INTO `food` VALUES(237, 8, 'Mint Tea', 4);\
+INSERT INTO `food` VALUES(238, 8, 'Prune Juice', 4);\
+INSERT INTO `food` VALUES(239, 8, 'Raspberry Leaf Tea', 4);\
+INSERT INTO `food` VALUES(240, 9, 'Cocoa', 4);\
+INSERT INTO `food` VALUES(241, 9, 'Gelatin', 4);\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `food_day`\
+--\
+\
+CREATE TABLE `food_day` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `food_id` int(11) NOT NULL,\
+  `date` datetime NOT NULL,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=57 ;\
+\
+--\
+-- Dumping data for table `food_day`\
+--\
+\
+INSERT INTO `food_day` VALUES(31, 201, '2012-09-18 00:00:00');\
+INSERT INTO `food_day` VALUES(32, 208, '2012-09-18 00:00:00');\
+INSERT INTO `food_day` VALUES(33, 209, '2012-09-18 00:00:00');\
+INSERT INTO `food_day` VALUES(34, 210, '2012-09-18 00:00:00');\
+INSERT INTO `food_day` VALUES(35, 38, '2012-09-19 00:00:00');\
+INSERT INTO `food_day` VALUES(36, 44, '2012-09-19 00:00:00');\
+INSERT INTO `food_day` VALUES(37, 46, '2012-09-19 00:00:00');\
+INSERT INTO `food_day` VALUES(38, 102, '2012-09-20 00:00:00');\
+INSERT INTO `food_day` VALUES(39, 104, '2012-09-20 00:00:00');\
+INSERT INTO `food_day` VALUES(40, 156, '2012-09-21 00:00:00');\
+INSERT INTO `food_day` VALUES(41, 157, '2012-09-21 00:00:00');\
+INSERT INTO `food_day` VALUES(42, 158, '2012-09-21 00:00:00');\
+INSERT INTO `food_day` VALUES(43, 17, '2012-09-19 00:00:00');\
+INSERT INTO `food_day` VALUES(44, 201, '2012-09-19 00:00:00');\
+INSERT INTO `food_day` VALUES(45, 208, '2012-09-19 00:00:00');\
+INSERT INTO `food_day` VALUES(46, 209, '2012-09-19 00:00:00');\
+INSERT INTO `food_day` VALUES(47, 210, '2012-09-19 00:00:00');\
+INSERT INTO `food_day` VALUES(48, 38, '2012-09-20 00:00:00');\
+INSERT INTO `food_day` VALUES(49, 44, '2012-09-20 00:00:00');\
+INSERT INTO `food_day` VALUES(50, 46, '2012-09-20 00:00:00');\
+INSERT INTO `food_day` VALUES(51, 102, '2012-09-21 00:00:00');\
+INSERT INTO `food_day` VALUES(52, 104, '2012-09-21 00:00:00');\
+INSERT INTO `food_day` VALUES(53, 156, '2012-09-22 00:00:00');\
+INSERT INTO `food_day` VALUES(54, 157, '2012-09-22 00:00:00');\
+INSERT INTO `food_day` VALUES(55, 158, '2012-09-22 00:00:00');\
+INSERT INTO `food_day` VALUES(56, 17, '2012-09-20 00:00:00');\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `food_type`\
+--\
+\
+CREATE TABLE `food_type` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `type` varchar(50) NOT NULL,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;\
+\
+--\
+-- Dumping data for table `food_type`\
+--\
+\
+INSERT INTO `food_type` VALUES(1, 'Protein Sources');\
+INSERT INTO `food_type` VALUES(2, 'Grain Products');\
+INSERT INTO `food_type` VALUES(3, 'Vegetables');\
+INSERT INTO `food_type` VALUES(4, 'Fruits');\
+INSERT INTO `food_type` VALUES(5, 'Nuts and Seeds');\
+INSERT INTO `food_type` VALUES(6, 'Spices and Flavorings');\
+INSERT INTO `food_type` VALUES(7, 'Fats and Oils');\
+INSERT INTO `food_type` VALUES(8, 'Beverages');\
+INSERT INTO `food_type` VALUES(9, 'Miscellaneous');}

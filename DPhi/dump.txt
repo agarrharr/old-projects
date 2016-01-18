@@ -1,0 +1,13 @@
+CREATE TABLE `members` (
+  `id` int(4) NOT NULL auto_increment,
+  `type` int(1) NOT NULL default '0',
+  `office` varchar(30) NOT NULL,
+  `fname` varchar(15) NOT NULL,
+  `lname` varchar(15) NOT NULL,
+  `uname` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `provider` varchar(20) NOT NULL,
+  `hashed_pass` varchar(40) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;

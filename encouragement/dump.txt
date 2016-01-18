@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS `encouragement`;
+CREATE TABLE IF NOT EXISTS `encouragement` (
+  `to` varchar(50) NOT NULL DEFAULT '',
+  `from` varchar(50) NOT NULL DEFAULT '',
+  `message` text NOT NULL,
+  `date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `viewed` tinyint(4) NOT NULL DEFAULT '0',
+  `printed` tinyint(4) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello</title>
+<script src="lib/easeljs-0.4.2.min.js"></script>
+<script>
+var canvas;
+var stage;
+var text;
+var img;
+var logo;
+
+function init(){
+	canvas = document.getElementById("canvas");
+	stage = new Stage(canvas);
+	text = new Text("Hello World!", "36px Arial", "#666");
+	text.x = 100;
+	text.y = 100;
+	
+	img = new Image();
+	img.src = "../../images/whetstoneDraft.jpg";
+	img.onload = setImg;
+}
+
+function setImg(event){
+	logo = new Bitmap(img);
+	stage.addChild(logo);
+	logo.x = canvas.width - 400;
+	logo.y = canvas.height - 100;
+	stage.addChild(text);
+	
+	//stage.update();
+	Ticker.addListener(window);
+}
+
+function tick(){
+	logo.x -= 5;
+	stage.update();
+}
+</script>
+</head>
+<body onload="init();">
+<canvas id="canvas" width="960" height="580"></canvas>
+</body>
+</html>

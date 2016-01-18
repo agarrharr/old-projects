@@ -1,0 +1,61 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `whetstone`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `challenge_attendance`
+--
+
+DROP TABLE IF EXISTS `challenge_attendance`;
+CREATE TABLE IF NOT EXISTS `challenge_attendance` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `leader_id` int(11) NOT NULL DEFAULT '0',
+  `date_id` int(11) NOT NULL DEFAULT '0',
+  `comment` text NOT NULL,
+  `attendance` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `challenge_dates`
+--
+
+DROP TABLE IF EXISTS `challenge_dates`;
+CREATE TABLE IF NOT EXISTS `challenge_dates` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` varchar(25) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `challenge_grouptype`
+--
+
+DROP TABLE IF EXISTS `challenge_grouptype`;
+CREATE TABLE IF NOT EXISTS `challenge_grouptype` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `challenge_leaders`
+--
+
+DROP TABLE IF EXISTS `challenge_leaders`;
+CREATE TABLE IF NOT EXISTS `challenge_leaders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL DEFAULT '',
+  `grouptype_id` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
