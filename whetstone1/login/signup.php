@@ -33,15 +33,15 @@ if(isset($_POST['email'])){
 			confirm_query($result_set);
 			$subject = "Whetstone Registration";
 			$body = "Hi,<br/><br/>Thanks for registering! To complete your registration click this link:<br/><a href='http://www.myWhetstone.org/login/registerEmail.php?email=" . urlencode($email) . "&code=" . $code . "'>http://www.myWhetstone.org/login/registerEmail.php?email=" . urlencode($email) . "&code=" . $code . "</a>";
-			$headers = "From: " . strip_tags('aharris88@gmail.com') . "\r\n";
-			$headers .= "Reply-To: ". strip_tags('aharris88@gmail.com') . "\r\n";
+			$headers = "From: " . strip_tags('adam@a.com') . "\r\n";
+			$headers .= "Reply-To: ". strip_tags('adam@a.com') . "\r\n";
 			//$headers .= "CC: susan@example.com\r\n";
 			$headers .= "MIME-Version: 1.0\r\n";
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 			if(mail($email, $subject, $body, $headers)){
 				echo "<p>Please check your email and click the link to complete your registration.</p>";
 			}else{
-				echo "Your registration email was not sent. Please email Adam at aharris88@gmail.com and he will fix it for you.";
+				echo "Your registration email was not sent. Please email Adam at adam@a.com and he will fix it for you.";
 			}
 		}else{
 			echo "Someone is already registered with this email address.";
